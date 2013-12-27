@@ -1,0 +1,163 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix atom: <http://lv2plug.in/ns/ext/atom#>.
+@prefix midi: <http://lv2plug.in/ns/ext/midi#> .
+
+<http://javafant.org/lv2/midisplit>
+  a lv2:Plugin, lv2:InstrumentPlugin;
+  lv2:binary <midisplit.so>;
+  doap:name "Midisplit";
+  doap:license <http://www.wtfpl.net/txt/copying/>;
+  lv2:property lv2:hardRtCapable;
+
+  lv2:port [
+    a lv2:InputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 0;
+    lv2:symbol "midi_input";
+    lv2:name "input"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 1;
+    lv2:symbol "chan1";
+    lv2:name "Channel 1"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 2;
+    lv2:symbol "chan2";
+    lv2:name "Channel 2"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 3;
+    lv2:symbol "chan3";
+    lv2:name "Channel 3"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 4;
+    lv2:symbol "chan4";
+    lv2:name "Channel 4"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 5;
+    lv2:symbol "chan5";
+    lv2:name "Channel 5"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 6;
+    lv2:symbol "chan6";
+    lv2:name "Channel 6"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 7;
+    lv2:symbol "chan7";
+    lv2:name "Channel 7"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 8;
+    lv2:symbol "chan8";
+    lv2:name "Channel 8"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 9;
+    lv2:symbol "chan9";
+    lv2:name "Channel 9"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 10;
+    lv2:symbol "chan10";
+    lv2:name "Channel 10";
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 11;
+    lv2:symbol "chan11";
+    lv2:name "Channel 11"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 12;
+    lv2:symbol "chan12";
+    lv2:name "Channel 12"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 13;
+    lv2:symbol "chan13";
+    lv2:name "Channel 13"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 14;
+    lv2:symbol "chan14";
+    lv2:name "Channel 14"
+  ],
+
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 15;
+    lv2:symbol "chan15";
+    lv2:name "Channel 15"
+  ],
+  [
+    a lv2:OutputPort, atom:AtomPort;
+    atom:bufferType atom:Sequence;
+    atom:supports midi:MidiEvent;
+    lv2:index 16;
+    lv2:symbol "chan16";
+    lv2:name "Channel 16"
+  ].
